@@ -7,6 +7,7 @@ function whisper(string) {
 }
 
 function logShout(string) {
+const spy = expect.spyOn(console, 'log').andCallThrough()
   console.log(string)
 }
 
